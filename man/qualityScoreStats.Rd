@@ -1,9 +1,7 @@
 \name{qualityScoreStats}
 \alias{qualityScoreStats}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{Produce quality score statistics for fast5 files}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

@@ -1,9 +1,7 @@
 \name{getFileNumber}
 \alias{getFileNumber}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{get the file number associated with a FAST5 file}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

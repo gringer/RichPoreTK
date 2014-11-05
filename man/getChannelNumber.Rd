@@ -1,9 +1,7 @@
 \name{getChannelNumber}
 \alias{getChannelNumber}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{get the channel number associated with a file (from read_id metadata)}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

@@ -1,9 +1,7 @@
 \name{runSummary}
 \alias{runSummary}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{Display aggregate statistics fast5 files from Metrichor}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

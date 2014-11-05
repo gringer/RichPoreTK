@@ -1,9 +1,7 @@
 \name{ParseConfig}
 \alias{ParseConfig}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{parse INI-like configuration files}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -28,6 +26,7 @@ ParseConfig(fileName)
 }
 \references{
 %% ~put references to the literature/web site here ~
+\url{http://stackoverflow.com/questions/21064761/how-to-parse-ini-like-configuration-files-with-r}
 }
 \author{
 %%  ~~who you are~~

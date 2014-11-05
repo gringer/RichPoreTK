@@ -1,9 +1,7 @@
 \name{keyExists}
 \alias{keyExists}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{determine if a given key (or path) exists in a fast5 file}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

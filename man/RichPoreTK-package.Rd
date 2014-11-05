@@ -2,14 +2,8 @@
 \alias{RichPoreTK-package}
 \alias{RichPoreTK}
 \docType{package}
-\title{
-What the package does (short line)
-~~ package title ~~
-}
-\description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
-}
+\title{Tools for processing fast5 files from Oxford Nanopore Devices}
+\description{R functions and a command-line interface for processing FAST5 files}
 \details{
 \tabular{ll}{
 Package: \tab RichPoreTK\cr

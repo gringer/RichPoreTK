@@ -1,9 +1,7 @@
 \name{getSeq}
 \alias{getSeq}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{extracts sequence from a single-record fastQ string}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

@@ -1,7 +1,7 @@
 Package: RichPoreTK
 Type: Package
 Title: Tools for processing FAST5 files from Oxford Nanopore Devices
-Version: 1.0
+Version: 1.0.2
 Date: 2014-07-10
 Author: David Eccles (gringer)
 Maintainer: David Eccles (gringer) <bioinformatics@gringene.org>

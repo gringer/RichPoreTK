@@ -1,9 +1,7 @@
 \name{eventPlot}
 \alias{eventPlot}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{Generate event data statistics from fast5 files}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

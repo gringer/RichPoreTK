@@ -1,9 +1,7 @@
 \name{getMux}
 \alias{getMux}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{get the mux associated with a file}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

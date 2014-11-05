@@ -1,9 +1,7 @@
 \name{getKeys}
 \alias{getKeys}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{get the keys for attributes in a given group of a fast5 file}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
