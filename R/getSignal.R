@@ -16,8 +16,3 @@ getSignal <- function(fname, channel){
     readSignal <- h5read(fname, sprintf("Raw/Channel_%d",channel),
                          readAttributes = TRUE);
 }
-
-sigStart <- 4848.0324 * 5000;
-sigEnd <- 5103.7546 * 5000;
-
-plot(readSignal[seq(sigStart-50000,sigEnd+10000,by=100)], type = "p", pch = ".");
