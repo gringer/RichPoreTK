@@ -15,6 +15,8 @@ Current Tools
 
 * valToSci -- conversion from standard to scientific notation (with SI prefixes)
 * sequenceHist -- total-length histogram plot
+* channelToPoreXY -- convert channel number to physical pore location
+* poreXYToChannel -- convert physical pore location to channel number
 
 Backburner Tools
 ----------------
