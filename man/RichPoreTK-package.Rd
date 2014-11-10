@@ -8,8 +8,8 @@
   \tabular{ll}{
     Package: \tab RichPoreTK\cr
     Type: \tab Package\cr
-    Version: \tab 1.0.2\cr
-    Date: \tab 2014-07-10\cr
+    Version: \tab 1.0.3\cr
+    Date: \tab 2014-11-11\cr
     License: \tab Artistic-2.0\cr
   }
   ~~ An overview of how to use the package, including the most important ~~
