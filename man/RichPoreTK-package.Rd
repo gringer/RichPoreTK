@@ -16,7 +16,6 @@ License: \tab Artistic-2.0\cr
 ~~ functions ~~
 }
 \author{David Eccles (gringer) <bioinformatics@gringene.org>}
-}
 \references{
 ~~ Literature or other references for background information ~~
 }
