@@ -8,18 +8,14 @@
 \tabular{ll}{
 Package: \tab RichPoreTK\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 1.0.2\cr
 Date: \tab 2014-07-10\cr
-License: \tab What license is it under?\cr
+License: \tab Artistic-2.0\cr
 }
 ~~ An overview of how to use the package, including the most important ~~
 ~~ functions ~~
 }
-\author{
-Who wrote it
-
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+\author{David Eccles (gringer) <bioinformatics@gringene.org>}
 }
 \references{
 ~~ Literature or other references for background information ~~
