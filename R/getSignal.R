@@ -1,18 +1,12 @@
-getSignal <- function(fname, channel){
-    ## fast5File <- "/home/gringer/bioinf/MIMR-2014-Feb-17-OXNP/data/4T1_FC2_Jul-17/bundled/mimr-minion_BN_011_34887GT_James_4T1_mtDNA_3_5506_1.fast5";
-    ## channel <- 266;
-
+getSignal <- function(fname, channel, startSample, endSample){
+    ## read raw signal from a fast5 file
+    cat(sprintf("Getting signal from channel %g[%g..%g]\n",
+                channel, startSample, endSample));
     fid <- H5Fopen(fname);
-    gid <- H5Gopen(fid, sprintf("Raw/Channel_%d",channel));
-    did <- H5Dopen(gid, "Signal");
-    readSignal <- H5Dread(did);
+    did <- H5Dopen(fid, sprintf("Raw/Channel_%d/Signal",channel));
+    ## warning... might be an off-by-1 error here
+    readSignal <- H5Dread(did)[(startSample+1):endSample];
     H5Dclose(did);
-    aid <- H5Aopen(gid, sprintf("Channel_%d",channel));
-    
-    H5Gclose(gid);
     H5Fclose(fid);
-
-    signalMeta <- h5read(fname, sprintf("Raw/Channel_%d/Meta",channel), readAttributes = TRUE);
-    readSignal <- h5read(fname, sprintf("Raw/Channel_%d",channel),
-                         readAttributes = TRUE);
+    return(readSignal);
 }

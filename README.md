@@ -1,14 +1,18 @@
 RichPoreTK
 ==========
 
-An R package containing tools for processing FAST5 files from Oxford Nanopore Devices
+An R package containing tools for processing FAST5 files from Oxford
+Nanopore Devices
 
 Goal
 ----
 
-An R Bioconductor package that can process all FAST5 files from Oxford Nanopore Devices.
+An R Bioconductor package that can process all FAST5 files from Oxford
+Nanopore Devices.
 
-Bioconductor (instead of CRAN) is preferred because the current scripts use rhdf5, so the package will be synchronised to changes in rhdf5.
+Bioconductor (instead of CRAN) is preferred because the current
+scripts use rhdf5, so the package will be synchronised to changes in
+rhdf5.
 
 Current Tools
 -------------
@@ -17,6 +21,14 @@ Current Tools
 * sequenceHist -- total-length histogram plot
 * channelToPoreXY -- convert channel number to physical pore location
 * poreXYToChannel -- convert physical pore location to channel number
+
+In-progress Tools
+-----------------
+
+* getChannelMeta -- retrieve metadata from a fast5 file
+* kmer2move -- convert a sequence of kmers into base move offsets
+* getEvents -- retrieve event data from a fast5 file
+* getSignal -- read raw signal from a fast5 file
 
 Backburner Tools
 ----------------
@@ -34,3 +46,4 @@ _Note: these tools are not well-developed and need a bit more work_
 * ParseConfig -- parse INI-like configuration files
 * qualityScoreStats -- produce quality score statistics for fast5 files
 * runSummary -- display aggregate statistics fast5 files from Metrichor
+
