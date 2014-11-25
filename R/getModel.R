@@ -5,7 +5,7 @@ getModel <- function(fname, modelDir = "template"){
     }
     fid <- H5Fopen(fname);
     did <- H5Dopen(fid,
-                   sprintf("Analyses/Basecall_2D_000/BaseCalled_%s",
+                   sprintf("Analyses/Basecall_2D_000/BaseCalled_%s/Model",
                            modelDir));
     readModel <- H5Dread(did, bit64conversion='bit64');
     H5Dclose(did);
