@@ -8,6 +8,7 @@ getModel <- function(fname, modelDir = "template"){
                    sprintf("Analyses/Basecall_2D_000/BaseCalled_%s/Model",
                            modelDir));
     readModel <- H5Dread(did, bit64conversion='bit64');
+    rownames(readModel) <- readModel$kmer;
     H5Dclose(did);
     H5Fclose(fid);
     return(readModel);
