@@ -21,6 +21,7 @@ Current Tools
 * sequenceHist -- total-length histogram plot
 * channelToPoreXY -- convert channel number to physical pore location
 * poreXYToChannel -- convert physical pore location to channel number
+* toUnambig -- enumerate unambiguous base sequences
 
 In-progress Tools
 -----------------
