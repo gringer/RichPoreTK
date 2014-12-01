@@ -10,6 +10,6 @@ subtractEvents <- function(scaledRawData, eventData, eventRange = NULL){
                          include.lowest=TRUE);
         base.loc <- cumsum(rep(1,length(eventposs)) /
                                table(eventposs)[eventposs])-1;
-        return(cbind(base.loc, data.inp - e.means[eventposs]));
+        return(cbind(base.loc, scaledRawData - e.means[eventposs]));
     });
 }
