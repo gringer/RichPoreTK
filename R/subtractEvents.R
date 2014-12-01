@@ -1,5 +1,5 @@
 subtractEvents <- function(scaledRawData, eventData, eventRange = NULL){
-    if(eventRange == NULL){
+    if(is.null(eventRange)){
         eventRange <- seq_len(dim(eventData)[1]);
     }
     with(eventData[eventRange,],{
