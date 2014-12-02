@@ -4,9 +4,10 @@ subtractEvents <- function(scaledRawData, eventData, eventRange = NULL){
     }
     with(eventData[eventRange,],{
         e.starts <- na.omit(start);
+        e.lengths <- na.omit(length);
         e.means <- na.omit(mean);
         e.starts <- e.starts - min(e.starts);
-	signalRange <- min(e.starts):max(e.starts+e.length);
+	signalRange <- min(e.starts):max(e.starts+e.lengths);
         eventposs <- cut(signalRange, e.starts, labels=FALSE,
                          include.lowest=TRUE);
         base.loc <- cumsum(rep(1,length(eventposs)) /
