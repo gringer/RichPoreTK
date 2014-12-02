@@ -11,6 +11,7 @@ getEvents <- function(fname, readNumber, sampleRate, readType = "all"){
         readEvents <- H5Dread(did, bit64conversion='bit64');
         H5Dclose(did);
         H5Fclose(fid);
+        rownames(readEvents) <- 0:(dim(readEvents)[1]-1);
         return(readEvents);
     } else if(readType == "2D") {
         didTem <- H5Dopen(fid, "Analyses/Basecall_2D_000/BaseCalled_template/Events");
@@ -39,6 +40,7 @@ getEvents <- function(fname, readNumber, sampleRate, readType = "all"){
         }
         readAln$move <- kmer2move(readAln$kmer);
         readAln$called.pos <- cumsum(readAln$move) + 1;
+        rownames(readAln) <- 0:(dim(readAln)[1]-1);
         return(readAln);
     } else {
         did <- H5Dopen(fid,
@@ -53,10 +55,7 @@ getEvents <- function(fname, readNumber, sampleRate, readType = "all"){
         readEvents <- readEvents[,c("mean","stdv","start","length","kmer","move","called.pos")];
         H5Dclose(did);
         H5Fclose(fid);
+        rownames(readEvents) <- 0:(dim(readEvents)[1]-1);
         return(readEvents);
     }
-    readEvents <- H5Dread(did, bit64conversion='bit64');
-    H5Dclose(did);
-    H5Fclose(fid);
-    return(readEvents);
 }
