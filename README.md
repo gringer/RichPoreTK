@@ -14,6 +14,17 @@ Bioconductor (instead of CRAN) is preferred because the current
 scripts use rhdf5, so the package will be synchronised to changes in
 rhdf5.
 
+Usage
+-----
+
+The easiest way to get this up and running is to use the devtools in R,
+which will pull the most recent version from the github repository:
+
+    library(devtools);
+    install_github("gringer/RichPoreTK", ref="master");
+    library(RichPoreTK);
+
+
 Current Tools
 -------------
 
